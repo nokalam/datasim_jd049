@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nokalam-datasim_jd049"
+version = "0.1.0"
+description = "按段落统计数据合成与仿真工程师·GPU 故障与作业自愈相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "nokalam" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://nokalam.github.io"
+Repository = "https://github.com/nokalam/datasim_jd049"
+Issues = "https://github.com/nokalam/datasim_jd049/issues"
+
+[project.scripts]
+datasim_jd049 = "datasim_jd049:main"
+
+[tool.setuptools]
+py-modules = ["datasim_jd049"]
